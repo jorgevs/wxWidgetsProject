@@ -3,9 +3,9 @@ project(wxWidgetsProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(wxWidgets_ROOT_DIR D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/)
-SET(wxWidgets_LIB_DIR D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/lib/gcc_dll)
-SET(wxWidgets_LIBRARIES D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/lib/)
+set(wxWidgets_ROOT_DIR     D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/)
+SET(wxWidgets_LIB_DIR      D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/lib/gcc_dll)
+SET(wxWidgets_LIBRARIES    D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/lib/)
 SET(wxWidgets_INCLUDE_DIRS D:/sw/CPPCompilersAndLibraries/wxWidgets-3.0.4/include/)
 
 set(wxWidgets_CONFIGURATION mswud)    #use this config for: debug

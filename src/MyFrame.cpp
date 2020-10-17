@@ -1,5 +1,6 @@
 #include "MyFrame.h"
 
+// Constructor
 MyFrame::MyFrame() : wxFrame(NULL, wxID_ANY, "Hello World", wxPoint(30, 30), wxSize(800, 600)) {
 
     // Create menus
@@ -22,11 +23,12 @@ MyFrame::MyFrame() : wxFrame(NULL, wxID_ANY, "Hello World", wxPoint(30, 30), wxS
     CreateStatusBar();
     SetStatusText("Welcome to wxWidgets!");
 
-    wxGridSizer *grid = new wxGridSizer(10, 10, 0, 0);
+    // Setting a layout
+    wxGridSizer *grid = new wxGridSizer(2, 2, 10, 10);
 
     wxButton *myButton = new wxButton(this, ID_MyButton, "Click me", wxPoint(10, 10), wxSize(150, 50));
-    grid->Add(myButton);
-    //grid->Add(myButton, 1, wxEXPAND | wxALL);
+    //grid->Add(myButton);
+    grid->Add(myButton, 1, wxEXPAND | wxALL);
 
     // Define window properties
     this->SetSize(800, 600);
